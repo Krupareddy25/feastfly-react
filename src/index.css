@@ -175,10 +175,6 @@
   height:230px;
   object-fit:cover;
 }
-.fm-card-img{
-  width:100%;
-  overflow:hidden;
-}
 .fm-card-body{
   padding:14px;
   display:flex;

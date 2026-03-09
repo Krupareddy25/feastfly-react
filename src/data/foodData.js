@@ -1,25 +1,3 @@
-// export const foodData = [
-//   {
-//     id: 1,
-//     category:
-//     name: "Peri Peri Chicken Bowl",
-//     price: 299,
-//     image: "https://source.unsplash.com/400x300/?chicken"
-//   },
-//   {
-//     id: 2,
-//     name: "Thai Green Curry",
-//     price: 259,
-//     image: "https://source.unsplash.com/400x300/?thai-food"
-//   },
-//   {
-//     id: 3,
-//     name: "Italian Pasta Bowl",
-//     price: 279,
-//     image: "https://source.unsplash.com/400x300/?pasta"
-//   }
-// ];
-// data/foodData.js
 export const foodData = [
   {
     id: 1,
