@@ -75,7 +75,7 @@ export default function Footer() {
           </div>
         </div>
         <div className="fm-footer-bottom">
-          © 2026 Freshmenu. All rights reserved by Krupa Komsani. Made with ❤️
+          © 2026 FeastFly. All rights reserved by Krupa Komsani. Made with ❤️
           for food lovers everywhere.
         </div>
       </div>
