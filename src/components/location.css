@@ -1,0 +1,92 @@
+/*.... LOCATION BAR...  */
+.location-bar {
+  margin-top: 6px;
+  padding: 12px 0;
+  border-bottom: 1px solid #eee;
+  background: #fafafa;
+  border: 1px solid #fbf771;
+}
+.location-container {
+  max-width: 1100px;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  padding: 0 15px;
+}
+.location-pill {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  background: white;
+  border: 1px solid #e5e7eb;
+  padding: 10px 22px;
+  border-radius: 40px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+}
+.location-icon {
+  background: #fff4d6;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.location-text span {
+  font-size: 12px;
+  color: gray;
+  display: block;
+}
+.location-text strong {
+  font-size: 14px;
+}
+.dropdown {
+  display: flex;
+  align-items: center;
+}
+.locate-btn {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  background: linear-gradient(175deg, #f2f226, #ffb300);
+  border: none;
+  padding: 10px 24px;
+  border-radius: 40px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.locate-btn:hover {
+  opacity: 0.9;
+}
+@media (max-width: 576px) {
+  .location-container {
+    flex-direction: column;
+    gap: 12px;
+  }
+  .location-pill {
+    width: 100%;
+    justify-content: center;
+    padding: 10px 18px;
+  }
+  .locate-btn {
+    width: 100%;
+    justify-content: center;
+  }
+}
+@media (min-width:577px) and (max-width:992px){
+  .location-container{
+    gap:16px;
+  }
+  .location-pill{
+    padding:10px 20px;
+  }
+}
+@media (min-width:1200px){
+  .location-container{
+    gap:24px;
+  }
+}

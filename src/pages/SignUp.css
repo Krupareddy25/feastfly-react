@@ -1,0 +1,90 @@
+.signup-wrapper {
+  min-height: 90vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #f4f4f4;
+  padding: 20px;
+}
+.signup-card {
+  width: 100%;
+  max-width: 420px;
+  padding: 40px;
+  border-radius: 15px;
+  background: #ffffff;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+  transition: 0.3s;
+}
+.input-group-custom {
+  position: relative;
+}
+.underline-input {
+  width: 100%;
+  border: none;
+  border-bottom: 2px solid #ccc;
+  padding: 10px 35px 10px 0;
+  font-size: 15px;
+  background: transparent;
+  outline: none;
+  transition: 0.3s;
+}
+.underline-input:focus {
+  border-bottom: 2px solid #ff5722;
+}
+.password-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+.toggle-icon {
+  position: absolute;
+  right: 0;
+  cursor: pointer;
+  font-size: 16px;
+  color: #777;
+}
+.toggle-icon:hover {
+  color: #ff5722;
+}
+.signup-btn {
+  width: 100%;
+  padding: 12px;
+  border-radius: 30px;
+  border: none;
+  color: white;
+  font-weight: 700;
+  background: linear-gradient(175deg,#ff9800,#ff5722);
+  transition: 0.3s;
+}
+.signup-btn:hover {
+  opacity: 0.9;
+}
+.login-link {
+  text-decoration: none;
+  font-weight: 700;
+  color: #ff5722;
+}
+@media (max-width: 576px) {
+  .signup-card {
+    padding: 25px;
+  }
+  .signup-card h4 {
+    font-size: 20px;
+  }
+  .underline-input {
+    font-size: 14px;
+  }
+  .signup-btn {
+    padding: 10px;
+  }
+}
+@media (min-width:577px) and (max-width:992px){
+  .signup-card{
+    max-width:450px;
+  }
+}
+@media (min-width:1200px){
+  .signup-card{
+    max-width:480px;
+  }
+}

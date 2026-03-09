@@ -1,0 +1,127 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.app-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+.main-content {
+  flex: 1;
+  padding: 20px;
+}
+.container {
+  width: 90%;
+  margin: auto;
+}
+@media (max-width: 1024px) {
+  .main-content {
+    padding: 15px;
+  }
+}
+@media (max-width: 640px) {
+  .main-content {
+    padding: 10px;
+  }
+}
+/* Menu */
+/*MENU HERO*/
+.menu-hero {
+  padding: 60px 20px 100px;
+  background: linear-gradient(90deg, #f8f5ee, #f6f3ea);
+  text-align: center;
+}
+.menu-header {
+  max-width: 700px;
+  margin: auto;
+}
+.menu-subtitle {
+  font-family: cursive;
+  color: #28a745;
+  font-size: 28px;
+  font-style: italic;
+  display: block;
+  margin-bottom: 15px;
+}
+.menu-title {
+  font-family: "Times New Roman", Times, serif;
+  font-size: 60px;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+.menu-desc {
+  font-size: 18px;
+  color: #6c757d;
+  line-height: 1.7;
+  max-width: 520px;
+  margin: auto;
+}
+
+/* FOOD GRID  */
+
+.fm-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+}
+.card {
+  overflow: hidden !important;
+  border-radius: 12px;
+}
+.card-img-top {
+  transition: transform 0.45s ease;
+}
+.card:hover .card-img-top {
+  transform: scale(1.04);
+}
+.custom-cart-btn {
+  background-color: hsl(49 95% 52%) !important;
+  color: black !important;
+  font-weight: 600 !important;
+  border: 2px solid hsl(49 95% 52%) !important;
+  transition: all 0.3s ease;
+}
+@media (max-width: 576px) {
+  .menu-hero {
+    padding: 40px 15px 60px;
+  }
+  .menu-subtitle {
+    font-size: 20px;
+  }
+  .menu-title {
+    font-size: 34px;
+  }
+  .menu-desc {
+    font-size: 14px;
+  }
+  .fm-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+}
+@media (min-width: 577px) and (max-width: 992px) {
+  .menu-title {
+    font-size: 45px;
+  }
+  .menu-desc {
+    font-size: 16px;
+  }
+  .fm-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+  }
+}
+@media (min-width: 993px) and (max-width: 1200px) {
+  .fm-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media (min-width: 1201px) {
+  .fm-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
