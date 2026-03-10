@@ -15,11 +15,11 @@ export default function LocationBar() {
             `https://api.opencagedata.com/geocode/v1/json?q=${latitude}+${longitude}&key=ea9c608b62b44c39a1d9fc8e09fedd4c`
           );
           const data = await res.json();
-          const city =
-            data.results[0].components.city ||
-            data.results[0].components.town ||
-            data.results[0].components.state;
-          setLocation(city);
+          const components = data.results[0].components;
+          const city = components.city || components.town || components.village || "";
+          const state = components.state || "";
+          const country = components.country || "";
+          setLocation([city, state, country].filter(Boolean).join(", "));
         } catch (err) {
           console.error(err);
           alert("Failed to fetch location");
@@ -34,7 +34,7 @@ export default function LocationBar() {
     <section className="location-bar">
       <div className="location-container">
         <div className="location-pill">
-  <div className="location-icon">
+          <div className="location-icon">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="24"
